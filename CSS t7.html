@@ -1,0 +1,185 @@
+<!-- CSS Task-07 submitted by Pratyush Tyagi 21BCE2747 Vit Vellore -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task12</title>
+    <style>
+      .box {
+        width: 500px;
+        height: auto;
+        border: none;
+        background-color: #75203f;
+        padding: 20px;
+      }
+
+      table {
+        width: 100%;
+      }
+      label {
+        width: 100px;
+        display: inline-block;
+      }
+      .form-row {
+        margin-bottom: 10px;
+      }
+      .box label {
+        width: 100px;
+        display: inline-block;
+        color: white;
+      }
+
+      .radio-inline input[type="radio"] {
+        display: inline-block;
+        margin: 0;
+      }
+
+      .radio-inline label {
+        color: white;
+      }
+      .box1 {
+        width: 550px;
+        height: auto;
+        border: 2px solid #000;
+        background-color: #a02a55;
+        padding: 20px;
+      }
+      .register-button {
+        background-color: white; 
+        color: black; 
+        padding: 10px 20px; 
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        width: 500px;
+        font-size: 16px;
+        border-radius: 7px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box">
+        <form action="htpps://www.google.com" method="post">
+          <table>
+            <tr class="form-row">
+              <td><label for="name">Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Enter your name"
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td><label for="email">Email:</label></td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td><label for="password">Password:</label></td>
+              <td>
+                <input type="password" id="password" name="password" required />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td><label for="phone">Phone Number:</label></td>
+              <td>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Enter your phone number"
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td><label for="age">Age:</label></td>
+              <td><input type="number" id="age" name="age" required /></td>
+            </tr>
+            <tr class="form-row">
+              <td><label>Gender:</label></td>
+              <td class="radio-inline">
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="male"
+                  required
+                />
+                <label for="male">Male</label>
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  value="female"
+                  required
+                />
+                <label for="female">Female</label>
+                <input
+                  type="radio"
+                  id="other"
+                  name="gender"
+                  value="other"
+                  required
+                />
+                <label for="other">Other</label>
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td><label for="language">Language:</label></td>
+              <td>
+                <select id="language" name="language[]" required>
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                  <option value="german">German</option>
+                  <option value="other">Other</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td><label for="zipcode">Zip Code:</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="zipcode"
+                  name="zipcode"
+                  required
+                  placeholder="Enter your zip code"
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td><label for="about">About:</label></td>
+              <td>
+                <textarea id="about" name="about" required></textarea>
+              </td>
+            </tr>
+          </table>
+          <input
+            type="submit"
+            value="Register"
+            class="register-button"
+            style="margin: 0 auto"
+          />
+        </form>
+      </div>
+    </div>
+    <a href="CSS t7.html">end of assignment 1</a>
+    <a href="CSS t6.html">Go Back</a>
+    <a href="index.html">Home</a>
+</body>
+</html>
